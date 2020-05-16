@@ -34,7 +34,7 @@
     "random-key": "^0.3.2",
     "request": "^2.81.0",
     "s3": "^4.4.0",
-    "sequelize": "^3.23.2",
+    "sequelize": "^5.15.1",
     "web-push": "^3.2.2"
   }
 }
