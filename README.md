@@ -1,0 +1,26 @@
+To delete Completely a place:
+  DELETE From Addresses WHERE idPlace = 39;
+  DELETE From Admins WHERE idPlace = 39;
+  DELETE From CodeLogs WHERE idPlace = 39;
+  DELETE From Tickets WHERE idPlace = 39;
+  DELETE From Coupons WHERE idPlace = 39;
+  DELETE From Deposits WHERE idPlace = 39;
+  DELETE From Favorites WHERE idPlace = 39;
+  DELETE From Deposits WHERE idPlace = 39;
+  DELETE From Menus WHERE idPlace = 39;
+  DELETE From Charges WHERE idPlace = 39;
+  DELETE From Prints WHERE idPlace = 39;
+  DELETE From Promotions WHERE idPlace = 39;
+  DELETE From Reservations WHERE idPlace = 39;
+  DELETE From Reviews WHERE idPlace = 39;
+  DELETE From Schedules WHERE idPlace = 39;
+  DELETE GuarnitionDetails From GuarnitionDetails JOIN Orders ON GuarnitionDetails.idOrder = Orders.id WHERE Orders.idPlace = 39;
+  DELETE OrderDetails From OrderDetails JOIN Orders ON OrderDetails.idOrder = Orders.id WHERE Orders.idPlace = 39;
+  DELETE From Orders WHERE idPlace = 39;
+  DELETE Options From Options JOIN Products ON Options.idProduct = Products.id WHERE Products.idPlace = 39;
+  DELETE Options From Options INNER JOIN Products ON Products.id = Options.idProduct WHERE Products.idPlace = 39;
+  DELETE From Products WHERE idPlace = 39;
+  DELETE From Notifications WHERE idPlace = 39;
+  Delete From Orders WHERE idPlace = 39;
+  Delete From Charges WHERE idPlace = 39;
+  Delete From Places WHERE id = 39;
