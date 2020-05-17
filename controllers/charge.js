@@ -25,9 +25,9 @@ var Notification = models.Notification;
 
 var env = process.env.NODE_ENV || "development";
 if(env == "production")
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false });
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'postgres' });
 else
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false });
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'postgres' });
 var db	= {};
 
 conekta.api_key = config.Keys.ConektaConfig.api_key;
