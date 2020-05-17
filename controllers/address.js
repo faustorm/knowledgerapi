@@ -11,9 +11,9 @@ var Sequelize = require("sequelize");
 var moment = require("moment");
 var env       = process.env.NODE_ENV || "development";
 if(env == "production")
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'mysql' });
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'mysql', debug: true });
 else
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'mysql' });
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306", logging: false, dialect:'mysql', debug: true });
 var db        = {};
 
 //GET all ADDRESS of idPlace
