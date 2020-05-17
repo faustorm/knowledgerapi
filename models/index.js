@@ -3,13 +3,13 @@ var path      = require("path");
 var Sequelize = require("sequelize");
 var env       = process.env.NODE_ENV || "development";
 if(env == "production")
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', {
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', null, {
 		logging: false,
 		host: '127.0.1',
 		port:"3306"
 	});
 else
-	var sequelize = new Sequelize('kn0wl3dg3r', 'root', 'facebook98', { host: 'localhost', port:"3306"});
+	var sequelize = new Sequelize('kn0wl3dg3r', 'root', null, { host: 'localhost', port:"3306"});
 var db        = {};
 
 fs.readdirSync(__dirname).filter(function(file) {
